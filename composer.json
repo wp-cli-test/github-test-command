@@ -1,0 +1,31 @@
+{
+    "name": "wp-cli-test/github-test-command",
+    "description": "Test command used for testing the package manager with GitHub.",
+    "type": "wp-cli-package",
+    "homepage": "http://wp-cli.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alain Schlesser",
+            "email": "alain.schlesser@gmail.com",
+            "homepage": "https://www.alainschlesser.come",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "files": [ "command.php" ],
+        "psr-4": {
+            "WP_CLI_Test\\GitHubTestCommand\\": "src/"
+        }
+    },
+    "require": {
+        "wp-cli/wp-cli": "*"
+    },
+    "extra": {
+        "commands": [
+            "github-test-command"
+        ]
+    }
+}
